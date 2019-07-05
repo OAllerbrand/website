@@ -1,13 +1,35 @@
 <html>
     <head>
         <title>Oskar's Website</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <h1>My Website</h1>
-        <p>This is my first website made with Github and VisualStudio Code</p>
-	<footer>
-		<p>Footer</p>
-		<p>Copyright 2019</p>
-	</footer>
+        <div class="container main-site-container">
+            <h1>My Website</h1>
+            <p>This is my first website made with Github and VisualStudio Code</p>
+            <input type="date" name="dateToday"
+             value="2019-07-05">
+            <ul class="list-group" id="news">
+            <!-- News Articles -->
+            </ul>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <input type="color" id="backcolour" name="backcolour" class="backcolour" value="#ff0000">
+                </div>
+                <input type="text" class="backcolor">
+                <div class="input-group-append">
+                    <button id="setColor" class="btn btn-primary">Change background color</button>
+                </div>
+            </div>
+
+            <footer></footer>
+                <p></p>
+                <p>Footer</p>
+                <p>Copyright 2019</p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
